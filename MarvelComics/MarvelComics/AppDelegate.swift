@@ -22,19 +22,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Dropbox.setupWithAppKey("xh6aa9e7jevjia8")  //MarvelComicsApp - dropbox
         
+            
+         let managedContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+      
         
-      self.deleteAllData("ComicBook")
-        
-        let  privateKey = "e1008cb7f3840fafc95fbd3c053a3233b0477af9"
-        let publicKey = "e09f6ccf645d45057b91d04107268698"
-        
-        let ts = getTimestamp()
-        let hash = (ts+privateKey+publicKey).md5()
-        
-        
-        let  url = getComicUrl(publicKey, hash: hash, ts: ts)
-        self.getComicImages(url)
+        let request = NSFetchRequest(entityName: "ComicBook")
+        let error = NSErrorPointer()
+       
+        let fetchResults =  managedContext.countForFetchRequest(request, error: error)
+        print("Count \(fetchResults)")
 
+        if fetchResults == 0 {
+           let ts = getTimestamp()
+           let hash = (ts+privateKey+publicKey).md5()
+            
+           let  url = getComicUrl(publicKey, hash: hash, ts: ts)
+           getComicImages(url)
+        } else {
+            dispatch_async(dispatch_get_main_queue(),{
+                NSNotificationCenter.defaultCenter().postNotificationName("showComics", object: nil)
+            })
+        }
         
         
         
@@ -143,137 +151,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    //Mark: GetData
-    
-    func getTimestamp()->String {
-        let now = NSDate()
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-        formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        return  (formatter.stringFromDate(now))
-        
-    }
-    
-    func getComicUrl(publicKey : String , hash : String , ts: String)->String {
-        return   "http://gateway.marvel.com/v1/public/comics?apikey=\(publicKey)&hash=\(hash)&ts=\(ts)"
-    }
-    
-    func  getComicImages(url:String)  {
-        
-        
-        Alamofire.request(.GET, url)
-            .responseJSON { response in
-                /*
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result.value)   // result of response serialization
-                */
-                let imageSize = "portrait_xlarge."
-                
-                
-                do {          let responseDict =  try NSJSONSerialization.JSONObjectWithData(response.data!, options: .MutableContainers) as! NSDictionary
-                    
-                    
-                    
-                    if  let dataDict  = responseDict.objectForKey("data")  as? NSDictionary {
-                        
-                        if  let resultsArray  = dataDict.objectForKey("results")  as? NSArray {
-                            for rec in resultsArray {
-                                
-                                if  let pitcureDict  = rec  as? NSDictionary {
-                                    var imgext = ""
-                                    var imgpath = ""
-                                    
-                                    if  let imagesArray  = pitcureDict.objectForKey("images")  as? NSArray {
-                                        
-                                        if imagesArray.count > 0 {
-                                            if  let ext =  imagesArray[0].objectForKey("extension")  as? String {
-                                                imgext = ext
-                                            }
-                                            
-                                            if  let path =  imagesArray[0].objectForKey("path")  as? String {
-                                                imgpath = path
-                                            }
-                                            let imgUrl = imgpath + "/" + imageSize + imgext
-                                            
-                                            
-                                            //   self.ComicUrlArray.append(imgUrl)
-                                            self.saveToCoreData(imgUrl)
-                                            
-                                        }
-                                    }
-                                    
-                                    //--
-                                }
-                                
-                            }
-                        }
-                        
-                        
-                    }
-                    
-                    dispatch_async(dispatch_get_main_queue(),{
-                      NSNotificationCenter.defaultCenter().postNotificationName("showComics", object: nil)
-                    })
-                    
-                    
-                } catch {
-                    print(error)
-                }
-                
-                
-                
-        }
-        
-    }
-
-    
-     // MARK: - CoreData
-    
-    func saveToCoreData( url: String) {
-        let managedContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-        
-        let entityDescription =
-        NSEntityDescription.entityForName("ComicBook",
-            inManagedObjectContext: managedObjectContext)
-        
-        
-        let book = ComicBook(entity: entityDescription!,
-            insertIntoManagedObjectContext: managedObjectContext)
-        
-        
-        book.bookUrl  = url
-     
-        do {
-            try self.managedObjectContext.save()
-               print(url)
-            //   status.text = "Contact Saved"
-        } catch {
-            fatalError("Failure to save context: \(error)")
-        }
-    }
-    
-    func deleteAllData(entity: String)
-    {
-        let managedContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-       
-        let fetchRequest = NSFetchRequest(entityName: entity)
-        fetchRequest.returnsObjectsAsFaults = false
-        
-        do
-        {
-            let results = try managedContext.executeFetchRequest(fetchRequest)
-            for managedObject in results
-            {
-                let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
-                managedContext.deleteObject(managedObjectData)
-            }
-        } catch let error as NSError {
-            print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
-        }
-    }
-
-
 }
 

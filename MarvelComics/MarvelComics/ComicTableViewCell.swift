@@ -11,6 +11,9 @@ import UIKit
 class ComicTableViewCell: UITableViewCell {
 
     @IBOutlet weak var comicImageView: UIImageView!
+    
+    @IBOutlet weak var comicButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

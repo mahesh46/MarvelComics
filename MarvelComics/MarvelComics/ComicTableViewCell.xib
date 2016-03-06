@@ -17,15 +17,23 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axb-Nj-LBp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="472"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgx-tQ-YXg">
+                        <rect key="frame" x="63" y="47" width="194" height="377"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="axb-Nj-LBp" secondAttribute="bottom" constant="-8" id="5O7-6O-V4C"/>
                     <constraint firstAttribute="trailingMargin" secondItem="axb-Nj-LBp" secondAttribute="trailing" constant="-8" id="5Ve-Dn-lCg"/>
+                    <constraint firstItem="Fgx-tQ-YXg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="55" id="92a-Ai-RC8"/>
                     <constraint firstItem="axb-Nj-LBp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Hbi-OY-RMX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fgx-tQ-YXg" secondAttribute="trailing" constant="55" id="Qmd-jT-Ahx"/>
+                    <constraint firstItem="Fgx-tQ-YXg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="39" id="YTB-Iu-YCn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fgx-tQ-YXg" secondAttribute="bottom" constant="40" id="fkD-ZY-vqn"/>
                     <constraint firstItem="axb-Nj-LBp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="w0v-Hx-MpI"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="comicButton" destination="Fgx-tQ-YXg" id="QSd-W1-ylQ"/>
                 <outlet property="comicImageView" destination="axb-Nj-LBp" id="wTK-4P-o0e"/>
             </connections>
             <point key="canvasLocation" x="155" y="280.5"/>

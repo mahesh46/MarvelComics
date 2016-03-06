@@ -2,7 +2,7 @@
 //  ComicBook+CoreDataProperties.swift
 //  
 //
-//  Created by Administrator on 05/03/2016.
+//  Created by Administrator on 06/03/2016.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,5 +15,6 @@ import CoreData
 extension ComicBook {
 
     @NSManaged var bookUrl: String?
+    @NSManaged var bookImage: NSData?
 
 }
