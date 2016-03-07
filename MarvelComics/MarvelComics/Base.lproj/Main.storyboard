@@ -35,11 +35,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pmU-SB-w5j"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-q5-1ct">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="SYC-LN-sN2"/>
+                                    <constraint firstAttribute="height" constant="20" id="gm9-mc-B79"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pFe-q5-1ct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ls-6p-LAG"/>
                             <constraint firstItem="2Ut-f4-FFV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="7bL-uQ-lad"/>
                             <constraint firstItem="2Ut-f4-FFV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Qmx-5q-TfM"/>
+                            <constraint firstItem="pFe-q5-1ct" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bPn-Xk-LSz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Ut-f4-FFV" secondAttribute="bottom" id="dhc-h3-XEj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Ut-f4-FFV" secondAttribute="bottom" id="nGs-4n-FKB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2Ut-f4-FFV" secondAttribute="trailing" constant="-20" id="sJ3-E3-4Mp"/>
@@ -76,6 +85,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="activityAnimation" destination="pFe-q5-1ct" id="AL9-f6-qO7"/>
                         <outlet property="tableView" destination="2Ut-f4-FFV" id="Jhc-GB-6DQ"/>
                     </connections>
                 </viewController>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369">
+            startingLineNumber = "388"
+            endingLineNumber = "388">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "376"
-            endingLineNumber = "376">
+            startingLineNumber = "395"
+            endingLineNumber = "395">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -38,11 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "370"
-            endingLineNumber = "370">
+            startingLineNumber = "389"
+            endingLineNumber = "389">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368">
+            startingLineNumber = "387"
+            endingLineNumber = "387">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,11 +66,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366">
+            startingLineNumber = "385"
+            endingLineNumber = "385">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,11 +80,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478986246.937825"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "numberOfSectionsInTableView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -115,11 +115,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478997690.6358"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "338"
-            endingLineNumber = "338">
+            startingLineNumber = "357"
+            endingLineNumber = "357">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -129,11 +129,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478986246.937825"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -145,11 +145,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "findComic()"
             landmarkType = "5">
          </BreakpointContent>
@@ -161,11 +161,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "findComic()"
             landmarkType = "5">
          </BreakpointContent>
@@ -177,11 +177,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "findComic()"
             landmarkType = "5">
          </BreakpointContent>
@@ -193,11 +193,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "findComic()"
             landmarkType = "5">
          </BreakpointContent>
@@ -209,11 +209,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "findComic()"
             landmarkType = "5">
          </BreakpointContent>
@@ -225,23 +225,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "findComic()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
@@ -257,7 +241,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
@@ -273,11 +257,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "findComic()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MarvelComics/ViewController.swift"
+            timestampString = "479040147.350465"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "ShowCamera(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -289,11 +289,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478989077.962895"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -305,11 +305,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478994631.619094"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "uploadImageToDropBox(_:)"
             landmarkType = "5">
             <Locations>
@@ -353,11 +353,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478994631.619094"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -369,11 +369,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478994631.619094"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "uploadImageToDropBox(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -385,11 +385,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -401,11 +401,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478988330.854243"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -417,11 +417,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478989077.962895"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -433,11 +433,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarvelComics/ViewController.swift"
-            timestampString = "478994631.619094"
+            timestampString = "479040147.350465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>

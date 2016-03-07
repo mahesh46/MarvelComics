@@ -13,14 +13,31 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mavelComics" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-LA-DlL">
+                                <rect key="frame" x="40" y="166" width="240" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="1eV-x8-FvB"/>
+                                    <constraint firstAttribute="width" constant="240" id="7LM-Je-d2h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TOP-LA-DlL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IT9-Uh-5oH"/>
+                            <constraint firstItem="TOP-LA-DlL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YcG-0B-ISW"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mavelComics" width="397" height="322"/>
+    </resources>
 </document>

@@ -18,6 +18,10 @@ import Photos
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    @IBOutlet weak var activityAnimation: UIActivityIndicatorView!
+    
      var ComicUrlArray : [String] = []
     var ComicDataArray : [NSData] = []
       private var ComicUrlsImageCache = NSMutableDictionary()    //cachefile
@@ -41,6 +45,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //register cell from xib
         tableView.registerNib(UINib(nibName: "ComicTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         
+        activityAnimation.hidden = false
+        activityAnimation.startAnimating()
     }
   
    
@@ -126,6 +132,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
                 dispatch_async(dispatch_get_main_queue(),{
                     self.tableView.reloadData()
+                    self.activityAnimation.stopAnimating()
                })
             } else {
                 //       status.text = "No Match"
@@ -153,6 +160,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func ShowCamera(sender: AnyObject) {
         
             self.comicSender  = sender
+        
+            //get file to send to dropbox
+              dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+           let row = self.comicSender!.tag
+           let datafile = self.ComicDataArray[row]
+           self.uploadImageToDropBox(datafile)
+            }
+        
+        
         
             imagePicker =  UIImagePickerController()
             imagePicker.delegate = self
@@ -190,11 +206,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             //update cell with photo image
             NSNotificationCenter.defaultCenter().postNotificationName("takenPhoto", object: nil)
             
+            /* --------- not sending camera pic to drop box----------
             //send to dropbox
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
         
-                   self.uploadImageToDropBox(self.PhotoData!)
+            self.uploadImageToDropBox(self.PhotoData!)
               }
+             */
          
         }
         
@@ -281,7 +299,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func ResetTable(sender: AnyObject) {
        
-        
+        activityAnimation.hidden = false
+        activityAnimation.startAnimating()
         deleteAllData("ComicBook")
         ComicUrlArray  = []
         ComicDataArray  = []
